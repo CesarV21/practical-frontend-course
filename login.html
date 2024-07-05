@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <style>
+      .login {
+        position: relative;
+      }
+
+      .logo {
+        display: block;
+      }
+
+      @media (max-width: 640px) {
+        .secondary-button {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%; /* Mantén el tamaño original del botón */
+          max-width: 300px; /* Asegura que el botón no sea más ancho que el contenedor */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="form-container">
+        <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo" />
+
+        <form action="" class="form">
+          <label for="email" class="label">Email address</label>
+          <input
+            type="text"
+            class="input input-email"
+            placeholder="platzi@example.com"
+            id="email"
+          />
+          <label for="password" class="label">Password</label>
+          <input
+            type="password"
+            class="input input-password"
+            placeholder="*********"
+            id="password"
+          />
+
+          <input
+            type="submit"
+            class="primary-button login-button"
+            value="Log in"
+          />
+          <a href="/">Forgot my password</a>
+        </form>
+
+        <button class="secondary-button signup-buton">Sign up</button>
+      </div>
+    </div>
+  </body>
+</html>
