@@ -159,3 +159,16 @@ form a {
   place-items: center;
   position: relative;
 }
+
+/* Styles applied to the create-account file */
+
+.input-name,
+.input-email,
+.input-password {
+  margin-bottom: 22px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
