@@ -172,3 +172,11 @@ form a {
   display: flex;
   flex-direction: column;
 }
+
+/* Styles applied to the my_account file */
+
+.value {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin: 8px 0px 32px 0px;
+}
